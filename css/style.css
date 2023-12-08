@@ -3,6 +3,14 @@ body{
     color:#434455;
     background-color: #FFF;
 }
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+img{
+    display: block;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -22,6 +30,11 @@ ul{
     height: 72px;
     align-items: center;
     flex-shrink: 0;
+    border-bottom: 1px solid #e7e9fc
+}
+
+.header-container{
+    display: flex;
 }
 .logo-cont{
     color:#4D5AE5;
@@ -31,11 +44,8 @@ ul{
     letter-spacing: 0.54px;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-flex;
-    height: 24px;
-    align-items: center;
-    flex-shrink: 0;
-    padding-left: 156px;
+    margin-right: 76px
+
 }
 .logo{
     color:#2E2F42;
@@ -50,16 +60,22 @@ ul{
     text-transform: uppercase;
     font-weight: 700;
 }
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
 .nav-list{
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    display: inline-flex;
-    align-items: flex-start;
+    display:flex;
     gap: 40px;
-    padding-left: 76px;
+   
+}
+.nav-list-item{
+    padding: 24px 0 24px;
 }
 .nav-list-item:hover,:focus{
     color: #404BBF;    
@@ -74,11 +90,11 @@ ul{
     letter-spacing: 0.32px;
     font-style: normal;
     
+    
 }
 .contacts-list {
     display: flex;
-    gap: 40px;
-    padding-left: 322px;
+    gap: 40px; 
 }
 .contacts-link:hover,:focus{
     color:#404BBF;
@@ -89,9 +105,9 @@ ul{
 
 .start-page{
     background: #2E2F42;
-   
-        height: 600px;
-        flex-shrink: 0;
+    padding: 188px 0 188px;
+    height: 600px;
+    flex-shrink: 0;
 }
 .main-title{
     color: #FFF;
@@ -99,12 +115,11 @@ ul{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    width: 496px;
     display: flex;
     align-items: center;
     margin:0 auto;
-    padding-top: 188px;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 .main-page-btn{
     background: #4D5AE5;
@@ -113,11 +128,14 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.64px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    display: flex;
-    align-items: center;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    
     margin: auto;
     padding: 16px 32px;
     
@@ -125,16 +143,19 @@ ul{
 .main-page-btn:hover,:focus{
     background : #404BBF;
 }
-.dscr-container{
+.description{
+    padding: 120px 0 120px;
+}
+.dscr-list{
     display: flex;
     gap: 24px;
+    
     justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+
 
 }
 .dscr-item{
-    max-width: 264px;
+    width: calc((100% - 72px) / 4);
     flex-direction: column;
 
 }
@@ -145,7 +166,6 @@ ul{
     letter-spacing: 0.4px;
     font-weight: 500;
     padding-bottom: 8px;
-    
     align-items: flex-start;
 }
 .sec-dscr{
@@ -156,6 +176,7 @@ ul{
 .our-team{
     background: #F4F4FD;
     height: 732px;
+    padding: 120px 0 120px
 }
 .card-container{
     display: flex;
@@ -165,7 +186,12 @@ ul{
     padding-left: 0;
 }
 .team-card{
-    background: #FFF;  
+    background: #FFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.card-dscr{
+    padding: 32px 0;
 }
 .our-team-title{
     color:#2E2F42;
@@ -176,6 +202,7 @@ ul{
     text-transform: capitalize;
     font-weight: 500;
     padding-top: 120px;
+    margin-bottom: 72px;
 }
 .our-team-name{
     color: #2E2F42;
@@ -187,6 +214,7 @@ ul{
     padding-bottom: 8px;
     display: flex;
     justify-content: center;
+    text-align: center;
     
         
 }
@@ -197,22 +225,22 @@ ul{
     padding-bottom: 32px;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+.portfolio{
+    padding: 120px 0 120px 0;
 }
 .port-list-container{
-    padding-bottom: 120px;
-}
-.port-list-row{
     display: flex;
-    gap: 24px;
-    padding-right: 156px;
-    padding-left: 156px;
-    padding-bottom: 42px;
-    
-    
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
+
 .port-list{
     border: 1px solid #E7E9FC;
     background: #FFF;
+    width: calc((100% - 48px) / 3);
 }
 .portfolio-title{
     color: #2E2F42;
@@ -222,8 +250,13 @@ ul{
     letter-spacing: 0.72px;
     text-transform: capitalize;
     font-weight: 500;
-    padding-top: 120px;
+
     padding-bottom: 72px;
+}
+.port-info-cont{
+    padding: 32px 16px;
+    border-top: none;
+    margin-bottom: 8px;
 }
 .port-list-title{
     color: #2E2F42;
@@ -243,18 +276,18 @@ ul{
     padding: 0px 16px 32px 16px;
     
 }
-footer{
+.footer{
     background: #2E2F42;
     height: 312px;
+    padding: 100px 0;
 }
 
 .footer-dscr{
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.32px;
-    padding-top: 16px;
-    width: 264px;
+    letter-spacing: 0.32px; 
+    max-width: 264px
     
     
 }
@@ -266,8 +299,6 @@ footer{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-    padding-left: 156px;
     
 }
 .logo-cont-footer{
@@ -283,5 +314,7 @@ footer{
  height: 24px;
  align-items: center;
  flex-shrink: 0;
+display: inline-block;
+margin-bottom: 16px;
  
 }
