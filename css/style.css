@@ -3,6 +3,18 @@ body{
     color:#434455;
     background-color: #FFF;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -75,7 +87,8 @@ ul{
    
 }
 .nav-list-item{
-    padding: 24px 0 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-list-item:hover,:focus{
     color: #404BBF;    
@@ -157,6 +170,8 @@ ul{
 .dscr-item{
     width: calc((100% - 72px) / 4);
     flex-direction: column;
+    
+    
 
 }
 .sec-name{
@@ -182,13 +197,13 @@ ul{
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 72px;
     padding-left: 0;
 }
 .team-card{
     background: #FFF;
-    width: calc((100% - 72px) / 4);
+    width:calc( (100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+    justify-content: space-between;
 }
 .card-dscr{
     padding: 32px 0;
@@ -201,7 +216,7 @@ ul{
     letter-spacing: 0.72px;
     text-transform: capitalize;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 72px;
 }
 .our-team-name{
     color: #2E2F42;
@@ -235,7 +250,7 @@ ul{
 .port-list{
     border: 1px solid #E7E9FC;
     background: #FFF;
-    width: calc((100% - 48px) / 3);
+    width: calc( (100% - 48px) / 3);
 }
 .portfolio-title{
     color: #2E2F42;
@@ -249,9 +264,9 @@ ul{
 }
 .port-info-cont{
     padding: 32px 16px;
-    border-top: none;
     margin-bottom: 8px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .port-list-title{
     color: #2E2F42;
