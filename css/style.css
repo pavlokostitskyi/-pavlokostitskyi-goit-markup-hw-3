@@ -7,8 +7,21 @@ a{
     text-decoration: none;
     color: inherit;
 }
+h1,h2,h3,h4{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
 ul{
     list-style: none;
+    margin: 0;
+}
+.top-line {
+    display: flex;  
+    height: 72px;
+    align-items: center;
+    flex-shrink: 0;
 }
 .logo-cont{
     color:#4D5AE5;
@@ -18,6 +31,11 @@ ul{
     letter-spacing: 0.54px;
     text-transform: uppercase;
     font-weight: 700;
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 156px;
 }
 .logo{
     color:#2E2F42;
@@ -38,6 +56,10 @@ ul{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding-left: 76px;
 }
 .nav-list-item:hover,:focus{
     color: #404BBF;    
@@ -51,6 +73,12 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.32px;
     font-style: normal;
+    
+}
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    padding-left: 322px;
 }
 .contacts-link:hover,:focus{
     color:#404BBF;
@@ -61,6 +89,9 @@ ul{
 
 .start-page{
     background: #2E2F42;
+   
+        height: 600px;
+        flex-shrink: 0;
 }
 .main-title{
     color: #FFF;
@@ -68,6 +99,12 @@ ul{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    width: 496px;
+    display: flex;
+    align-items: center;
+    margin:0 auto;
+    padding-top: 188px;
+    margin-bottom: 48px;
 }
 .main-page-btn{
     background: #4D5AE5;
@@ -79,9 +116,27 @@ ul{
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 16px 32px;
+    
 }
 .main-page-btn:hover,:focus{
     background : #404BBF;
+}
+.dscr-container{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+.dscr-item{
+    max-width: 264px;
+    flex-direction: column;
+
 }
 .sec-name{
     color: #2E2F42;
@@ -89,6 +144,9 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-weight: 500;
+    padding-bottom: 8px;
+    
+    align-items: flex-start;
 }
 .sec-dscr{
     font-size: 16px;
@@ -97,6 +155,14 @@ ul{
 }
 .our-team{
     background: #F4F4FD;
+    height: 732px;
+}
+.card-container{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 72px;
+    padding-left: 0;
 }
 .team-card{
     background: #FFF;  
@@ -109,19 +175,44 @@ ul{
     letter-spacing: 0.72px;
     text-transform: capitalize;
     font-weight: 500;
+    padding-top: 120px;
 }
 .our-team-name{
-    
     color: #2E2F42;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    
+        
 }
 .our-taem-dscr{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+.port-list-container{
+    padding-bottom: 120px;
+}
+.port-list-row{
+    display: flex;
+    gap: 24px;
+    padding-right: 156px;
+    padding-left: 156px;
+    padding-bottom: 42px;
+    
+    
+}
+.port-list{
+    border: 1px solid #E7E9FC;
+    background: #FFF;
 }
 .portfolio-title{
     color: #2E2F42;
@@ -131,6 +222,8 @@ ul{
     letter-spacing: 0.72px;
     text-transform: capitalize;
     font-weight: 500;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .port-list-title{
     color: #2E2F42;
@@ -138,14 +231,21 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 16px 8px 16px;
 }
 .port-list-dscr{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding: 0px 16px 32px 16px;
+    
 }
 footer{
     background: #2E2F42;
+    height: 312px;
 }
 
 .footer-dscr{
@@ -153,7 +253,35 @@ footer{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding-top: 16px;
+    width: 264px;
+    
+    
 }
 .footer-logo{
     color: #F4F4FD;
+    padding: 0;
+}
+.footer-cont{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 156px;
+    
+}
+.logo-cont-footer{
+ color:#4D5AE5;
+ font-family: "Raleway",
+ sans-serif;
+ font-size: 18px;
+ line-height: 1.17;
+ letter-spacing: 0.54px;
+ text-transform: uppercase;
+ font-weight: 700;
+ display: inline-flex;
+ height: 24px;
+ align-items: center;
+ flex-shrink: 0;
+ 
 }
