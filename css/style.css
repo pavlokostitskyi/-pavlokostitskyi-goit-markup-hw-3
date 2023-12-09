@@ -86,10 +86,11 @@ ul{
     gap: 40px;
    
 }
-.nav-list-item{
+.nav-list-link{
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
 .nav-list-item:hover,:focus{
     color: #404BBF;    
     font-size: 16px;    
@@ -114,6 +115,10 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+}
+.contacts-link-item{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .start-page{
@@ -180,8 +185,8 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.4px;
     font-weight: 500;
-    padding-bottom: 8px;
     align-items: flex-start;
+    margin-bottom: 8px;
 }
 .sec-dscr{
     font-size: 16px;
