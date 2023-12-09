@@ -17,7 +17,7 @@ body{
 }
 .container {
     width: 1158px;
-    margin: 0 auto;
+    margin:  auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -30,9 +30,11 @@ a{
 }
 h1,h2,h3,h4{
     margin: 0;
+    padding: 0;
 }
 p{
     margin: 0;
+    padding: 0;
 }
 ul{
     list-style: none;
@@ -155,7 +157,6 @@ ul{
     min-width: 169px;
     height: 56px;
     display: block;
-    
     margin: auto;
     padding: 16px 32px;
     
@@ -245,11 +246,12 @@ ul{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
+    
 }
 
 .port-list{
     background: #FFF;
+    width: calc((100% - 48px) / 3);
    
 }
 .portfolio-title{
