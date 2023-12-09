@@ -250,12 +250,13 @@ ul{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 .port-list{
-    border: 1px solid #E7E9FC;
+    
     background: #FFF;
-    width: calc( (100% - 48px) / 3);
+   
 }
 .portfolio-title{
     color: #2E2F42;
