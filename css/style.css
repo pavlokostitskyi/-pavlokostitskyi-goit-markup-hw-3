@@ -107,6 +107,7 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.32px;
     font-style: normal;
+    margin-left: 332px;
     
     
 }
@@ -266,7 +267,6 @@ ul{
 }
 .port-info-cont{
     padding: 32px 16px;
-    margin-bottom: 8px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
