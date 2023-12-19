@@ -226,6 +226,7 @@ img {
 .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
+    max-width: 1440px;
 }
 
 .benefits-items {
