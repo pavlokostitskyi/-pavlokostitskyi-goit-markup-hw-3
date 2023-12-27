@@ -589,7 +589,7 @@ text {
     flex-shrink: 0;
     border-radius: 4px;
     background: #FCFCFC;  
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -602,10 +602,11 @@ text {
     
 }
 .modal-btn{
-    /* position: absolute; */
-    margin-left: auto;
-    display: flex;
-    left: 24px;
+    position: absolute;
+    /* margin-left: auto;
+    display: flex; */
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     background-color: #e7e9fc;
@@ -666,9 +667,10 @@ text {
     width: 100%;
     height: 40px;
     border-radius: 4px;
-    padding-left:34px;
+    padding-left:38px;
     border: 1px solid  rgba(46, 47, 66, 0.40);  
-    outline: none;
+    background-color: transparent;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus{
@@ -687,12 +689,23 @@ text {
 }
 .form-user-comment{
     width: 100%;
-    resize: vertical;
+    resize: none;
     max-height: 120px;
     border-radius: 4px;
     padding: 8px 16px;
-    outline: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40)); 
+}
+.comment{
+    margin-bottom: 16px
 }
 .form-user-comment:focus{
     border-color: #4D5AE5;
@@ -767,7 +780,7 @@ text {
     border: none;
     color: var(--WHITE, #FFF);
     text-align: center;
-    font-family: Roboto;
+    font-family: Roboto , sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -804,4 +817,5 @@ text {
 }
 .subscribe-form-icon{
     fill  : #FFFFFF;
+    margin-left: 16px;
 }
