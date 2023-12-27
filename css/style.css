@@ -580,12 +580,20 @@ text {
     pointer-events: none; */
 }
 .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     width: 408px;
     min-height: 584px;
     flex-shrink: 0;
     border-radius: 4px;
     background: #FCFCFC;  
     padding: 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open{
     opacity:1;
@@ -594,6 +602,7 @@ text {
     
 }
 .modal-btn{
+    /* position: absolute; */
     margin-left: auto;
     display: flex;
     left: 24px;
@@ -604,11 +613,13 @@ text {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus{
    background-color: #404BBF;
+   border: none;
 }
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
@@ -627,6 +638,10 @@ text {
 }
 .modal-icon{
     box-sizing: border-box;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-fild{
+    margin-bottom: 8px;
 }
 .form-item{
     margin-bottom: 8px;
@@ -636,10 +651,13 @@ text {
         font-family: Roboto;
         font-size: 12px;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 1.17;
         letter-spacing: 0.48px;
         display: block;
         margin-bottom: 4px;
+        background-color: transparent;
+        outline: transparent;
+        padding-left: 38px;
 }
 .form-item{
     position: relative;
@@ -665,6 +683,7 @@ text {
     left: 16px;
     transform:translateY(-50%) ;
     stroke: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-user-comment{
     width: 100%;
@@ -755,6 +774,7 @@ text {
     line-height: 24px;
     letter-spacing: 0.64px;
     cursor: pointer;
+    min-width: 165px;
 }
 .subscribe-form-btn:hover,
 .subscribe-form-btn:focus{
@@ -784,4 +804,4 @@ text {
 }
 .subscribe-form-icon{
     fill  : #FFFFFF;
-/* } */
+}
