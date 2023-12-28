@@ -639,16 +639,21 @@
               ></textarea>
             </div>
           
-        <div class="form-fild">
-            <label class="form-lable" for="user-chekbox"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
-            <div class="form-item">
-              <input type="checkbox" />
+        <div class="form-fild-checkbox">
+              <input type="checkbox" name="user-privacy" id="user-privacy"
+              value="true" class="checkbox-input visually-hidden" />
+              <label class="checkbox-lable" for="user-privacy"> I accept the terms and conditions of the
+                 <span class="checkbox-icon">
+                  <svg class="checkbox-icon-svg"  width="10" height="8">
+                    <use href="./images/icons.svg#icon-check" ></use>
+                  </svg>
+                 </span>
+                 <a class="checkbox-link" href="#">Privacy Policy</a></label>
             </div>
-        </div>
+        
 
           <button class="modal-send-btn" type="submit">Send</button>
+        </div>
         </form>
       </div>
       </div>
