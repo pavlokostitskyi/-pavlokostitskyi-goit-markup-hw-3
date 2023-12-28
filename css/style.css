@@ -737,7 +737,7 @@ text {
 .modal-send-btn{
     display: block;
     padding: 16px 32px;
-    max-width: 169px;
+    min-width: 169px;
     gap: 10px;
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
@@ -832,10 +832,13 @@ text {
     fill  : #FFFFFF;
     margin-left: 16px;
 }
+.form-fild-checkbox{
+    margin-bottom: 24px;
+}
 .checkbox-lable{
     color: #8E8F99;
     font-size: 12px;
-    line-height: 1,17;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 .checkbox-icon{
