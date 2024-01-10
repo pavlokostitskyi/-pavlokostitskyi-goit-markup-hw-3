@@ -270,7 +270,53 @@ img {
     background-size: cover;
     max-width: 1440px;
 }
+@media only screen and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office_mob@1x.jpg');
+    }
+}
 
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office_mob@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office_tab@1x.jpg');
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office_tab@2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office.jpg');
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/maim-page/people-office\ _desc@2x.jpg');
+    }
+}
     
 .hero-header {
     color:  #FFF;
@@ -286,6 +332,14 @@ img {
     margin-bottom: 72px;
     text-transform: capitalize;
     max-width: 288px;
+}
+@media  screen and (min-width:768px) {
+    .hero-header{
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: 1.12px;
+  }
 }
 
 
@@ -337,6 +391,16 @@ img {
     margin-bottom: 8px; */
 
 }
+.benefits-item-header {
+    margin-bottom: 8px;
+    text-align: center;
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
 @media only screen and (max-width: 767.988px) {
     .benefits-items {
         --items: 1;
@@ -381,7 +445,6 @@ img {
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.4px;
-       
     }
 }
 
@@ -393,16 +456,13 @@ img {
 }
 
 
-.benefits-item-header {
-    margin-bottom: 8px;
-    text-align: center; 
-    color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    
+
+.benefits-item-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 @media only screen and (min-width: 768px) {
     .benefits-item-header {
@@ -414,19 +474,16 @@ img {
         font-family: Roboto;
         font-size: 20px;
         font-style: normal;
-        font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
     }
 }
-
-.benefits-item-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+@media only screen and (min-width: 1158px){
+    .benefits-item-text{
+        font-weight: 400;
+    }
 }
+
 .social-links {
     display: flex;
     flex-shrink: 0;
@@ -710,6 +767,11 @@ img {
        
     }
 }
+.footer-logo-box {
+    margin-bottom: 72px;
+    ;
+
+}
 @media only screen and (min-width: 768px) {
     .footer-container{
         display: flex;
@@ -717,7 +779,12 @@ img {
         gap: 72px 24px;
   }
     .footer-text {
-        max-width: 264px;}
+        max-width: 264px;
+    }
+    .footer-logo-box{
+        margin-bottom: 0;
+    }
+        
 }
 @media screen and (min-width:1158px) {
     .footer-container{
@@ -725,16 +792,14 @@ img {
     }
     .footer-logo-box{
         margin-right: 120px;
+        margin-bottom: 0;
     }
     .footer-form{
         margin-left: auto;
     }
 }
 
-.footer-logo-box {
-    margin-bottom :72px; ;
-    
-}
+
 
 .footer-logo-link {
     display: block;
@@ -1096,7 +1161,7 @@ text {
 }
 .subscribe-form-icon{
     fill  : #FFFFFF;
-    margin-left: 16px;
+    
 }
 .form-fild-checkbox{
     margin-bottom: 24px;
